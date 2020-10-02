@@ -123,40 +123,26 @@ btn.on('click', function(e) {
 function mostrar_abas(obj) {
     document.getElementById('aluno1').style.display = "none";
     document.getElementById('aluno2').style.display = "none";
-    document.getElementById('aluno3').style.display = "none";
-    document.getElementById('aluno4').style.display = "none";
-    document.getElementById('aluno5').style.display = "none";
+
 
     document.getElementById('alunoMenu1').style.display = "none";
     document.getElementById('alunoMenu2').style.display = "none";
-    document.getElementById('alunoMenu3').style.display = "none";
-    document.getElementById('alunoMenu4').style.display = "none";
-    document.getElementById('alunoMenu5').style.display = "none";
+
+
+    document.getElementById('portfolio1').style.display = "none";
+    document.getElementById('portfolio2').style.display = "none";
 
     switch (obj.id) {
         case 'idAluno1':
             document.getElementById('aluno1').style.display = "block";
             document.getElementById('alunoMenu1').style.display = "block";
+            document.getElementById('portfolio1').style.display = "block";
 
             break
         case 'idAluno2':
             document.getElementById('aluno2').style.display = "block";
             document.getElementById('alunoMenu2').style.display = "block";
-
-            break
-        case 'idAluno3':
-            document.getElementById('aluno3').style.display = "block";
-            document.getElementById('alunoMenu3').style.display = "block";
-
-            break
-        case 'idAluno4':
-            document.getElementById('aluno4').style.display = "block";
-            document.getElementById('alunoMenu4').style.display = "block";
-
-            break
-        case 'idAluno5':
-            document.getElementById('aluno5').style.display = "block";
-            document.getElementById('alunoMenu5').style.display = "block";
+            document.getElementById('portfolio2').style.display = "block";
 
             break
     }
