@@ -38,23 +38,46 @@
                     </li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">ABOUT</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Ana Luzia - RA 666</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#final">WHERE</a>
                     </li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">Alunos</a>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">ALUNOS</a>
                         <ul>
                             <li class="nav-item mx-0 mx-lg-1">
-                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">Teste1</a>
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aluno1" id="idAluno1" onclick="mostrar_abas(this);">Ana Luzia</a>
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
-                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">Teste2</a>
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aluno2" id="idAluno2" onclick="mostrar_abas(this);">Ana e Luzia</a>
                             </li>
                             <li class="nav-item mx-0 mx-lg-1">
-                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="">Teste3</a>
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aluno3" id="idAluno3" onclick="mostrar_abas(this);">Ana vs Luzia</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aluno4" id="idAluno4" onclick="mostrar_abas(this);">Ana vs Luzia</a>
+                            </li>
+                            <li class="nav-item mx-0 mx-lg-1">
+                                <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#aluno5" id="idAluno5" onclick="mostrar_abas(this);">Ana vs Luzia</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a class="navbar-brand js-scroll-trigger" data-toggle="modal" data-target="#popUpForm" href=""><img id="" src="assets/img/form.png" alt="Formulário" width=20%; height=40%></a>
+                        <a class="navbar-brand js-scroll-trigger" data-toggle="modal" data-target="#popUpForm" href=""><img id="idForm" src="assets/img/form.png" alt="Formulário" width=20%; height=40%></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto menu">
+                    <li class="nav-item mx-0 mx-lg-1" style="display: none;" id="alunoMenu1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Ana Luzia Mendes 1</a>
+                        <p class="matricula">RA 12312412</p>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1" style="display: none;" id="alunoMenu2"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Ana Luzia Mendes 2</a>
+                        <p class="matricula">RA 12312412</p>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1" style="display: none;" id="alunoMenu3"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Ana Luzia Mendes 3</a>
+                        <p class="matricula">RA 12312412</p>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1" style="display: none;" id="alunoMenu4"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Ana Luzia Mendes 4</a>
+                        <p class="matricula">RA 12312412</p>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1" style="display: none;" id="alunoMenu5"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Ana Luzia Mendes 5</a>
+                        <p class="matricula">RA 12312412</p>
                     </li>
                 </ul>
             </div>
@@ -106,7 +129,7 @@
                     </div>
                     <div class="modal-footer">
                         <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>-->
-                        <button type="button" id="success2" class="btn btn-secondary" onClick="limpaCampos()">Limpar</button>
+                        <button type="submit" class="btn btn-secondary" onClick="limpaCampos()">Limpar</button>
                         <button type="submit" id="mensagemEnviada" class="btn btn-primary" data-dismiss="modal">Enviar</button>
                     </div>
                 </div>
@@ -365,19 +388,16 @@
             </div>
         </div>
     </section>
-    <section class="page-section " id="contact ">
+    <!--<section class="page-section " id="contact">
         <div class="container ">
-            <!-- Contact Section Heading-->
             <div class="text-center ">
                 <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">CONTACT</h2>
             </div>
-            <!-- Icon Divider-->
             <div class="divider-custom ">
                 <div class="divider-custom-line "></div>
                 <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
                 <div class="divider-custom-line "></div>
             </div>
-            <!-- Contact Section Content-->
             <div class="row justify-content-center ">
                 <div class="col-lg-4 ">
                     <div class="d-flex flex-column align-items-center ">
@@ -394,8 +414,243 @@
                 </div>
             </div>
         </div>
+    </section>-->
+
+    <section class="page-section page-aluno" id="aluno1" style="display:none">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <div class="text-center ">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">Olá, Ana Luzia 1</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center ">
+                <div class="col-lg-2 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">RA</div>
+                        <div class="lead font-weight-bold ">123456789</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">Telefone</div>
+                        <div class="lead font-weight-bold ">(99) 9 9999-9999</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="far fa-envelope "></i></div>
+                        <div class="text-muted ">E-mail</div><a class="lead font-weight-bold " href="mailto:name@example.com ">analuzia@seuemail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-user-circle "></i></div>
+                        <div class="text-muted ">Lorem Ipsum</div>
+                        <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue nibh at enim ornare, a dignissim neque gravida. Proin tincidunt orci at quam viverra cursus. Donec massa arcu, convallis sed diam eu, rutrum consequat
+                            nisi. Morbi at nulla turpis. Quisque quis urna non sem suscipit imperdiet. Integer molestie mauris et felis hendrerit, in cursus nibh condimentum. Morbi porta condimentum pretium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="footer text-center ">
+    <section class="page-section page-aluno" id="aluno2" style="display:none">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <div class="text-center ">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">Olá, Ana Luzia 2</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center ">
+                <div class="col-lg-2 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">RA</div>
+                        <div class="lead font-weight-bold ">123456789</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">Telefone</div>
+                        <div class="lead font-weight-bold ">(99) 9 9999-9999</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="far fa-envelope "></i></div>
+                        <div class="text-muted ">E-mail</div><a class="lead font-weight-bold " href="mailto:name@example.com ">analuzia@seuemail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-user-circle "></i></div>
+                        <div class="text-muted ">Lorem Ipsum</div>
+                        <h1>Titulo 1</h1>
+                        <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue nibh at enim ornare, a dignissim neque gravida. Proin tincidunt orci at quam viverra cursus. Donec massa arcu, convallis sed diam eu, rutrum consequat
+                            nisi. Morbi at nulla turpis. Quisque quis urna non sem suscipit imperdiet. Integer molestie mauris et felis hendrerit, in cursus nibh condimentum. Morbi porta condimentum pretium.
+                        </p>
+                        <h2>Titulo 2</h2>
+                        <p class="text-muted ">Lalalalall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section page-aluno" id="aluno3" style="display:none">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <div class="text-center ">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">Olá, Ana Luzia 3</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center ">
+                <div class="col-lg-2 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">RA</div>
+                        <div class="lead font-weight-bold ">123456789</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">Telefone</div>
+                        <div class="lead font-weight-bold ">(99) 9 9999-9999</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="far fa-envelope "></i></div>
+                        <div class="text-muted ">E-mail</div><a class="lead font-weight-bold " href="mailto:name@example.com ">analuzia@seuemail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-user-circle "></i></div>
+                        <div class="text-muted ">Lorem Ipsum</div>
+                        <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue nibh at enim ornare, a dignissim neque gravida. Proin tincidunt orci at quam viverra cursus. Donec massa arcu, convallis sed diam eu, rutrum consequat
+                            nisi. Morbi at nulla turpis. Quisque quis urna non sem suscipit imperdiet. Integer molestie mauris et felis hendrerit, in cursus nibh condimentum. Morbi porta condimentum pretium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section page-aluno" id="aluno4" style="display:none">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <div class="text-center ">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">Olá, Ana Luzia 4</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center ">
+                <div class="col-lg-2 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">RA</div>
+                        <div class="lead font-weight-bold ">123456789</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">Telefone</div>
+                        <div class="lead font-weight-bold ">(99) 9 9999-9999</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="far fa-envelope "></i></div>
+                        <div class="text-muted ">E-mail</div><a class="lead font-weight-bold " href="mailto:name@example.com ">analuzia@seuemail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-user-circle "></i></div>
+                        <div class="text-muted ">Lorem Ipsum</div>
+                        <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue nibh at enim ornare, a dignissim neque gravida. Proin tincidunt orci at quam viverra cursus. Donec massa arcu, convallis sed diam eu, rutrum consequat
+                            nisi. Morbi at nulla turpis. Quisque quis urna non sem suscipit imperdiet. Integer molestie mauris et felis hendrerit, in cursus nibh condimentum. Morbi porta condimentum pretium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section page-aluno" id="aluno5" style="display:none">
+        <div class="container ">
+            <!-- Contact Section Heading-->
+            <div class="text-center ">
+                <h2 class="page-section-heading text-secondary d-inline-block mb-0 ">Olá, Ana Luzia 5</h2>
+            </div>
+            <!-- Icon Divider-->
+            <div class="divider-custom ">
+                <div class="divider-custom-line "></div>
+                <div class="divider-custom-icon "><i class="fas fa-star "></i></div>
+                <div class="divider-custom-line "></div>
+            </div>
+            <!-- Contact Section Content-->
+            <div class="row justify-content-center ">
+                <div class="col-lg-2 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">RA</div>
+                        <div class="lead font-weight-bold ">123456789</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-mobile-alt "></i></div>
+                        <div class="text-muted ">Telefone</div>
+                        <div class="lead font-weight-bold ">(99) 9 9999-9999</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="far fa-envelope "></i></div>
+                        <div class="text-muted ">E-mail</div><a class="lead font-weight-bold " href="mailto:name@example.com ">analuzia@seuemail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="d-flex flex-column align-items-center ">
+                        <div class="icon-contact mb-3 "><i class="fas fa-user-circle "></i></div>
+                        <div class="text-muted ">Lorem Ipsum</div>
+                        <p class="text-muted ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue nibh at enim ornare, a dignissim neque gravida. Proin tincidunt orci at quam viverra cursus. Donec massa arcu, convallis sed diam eu, rutrum consequat
+                            nisi. Morbi at nulla turpis. Quisque quis urna non sem suscipit imperdiet. Integer molestie mauris et felis hendrerit, in cursus nibh condimentum. Morbi porta condimentum pretium.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-center " id="final">
         <div class="container ">
             <div class="row ">
                 <!-- Footer Location-->

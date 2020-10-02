@@ -10379,7 +10379,6 @@
     .menu li {
         position: relative;
         float: left;
-        border-right: 1px solid #c0c0c0;
     }
     
     .menu li a {
@@ -10389,7 +10388,7 @@
         display: block;
     }
     
-    .menu li a:hover {
+    .menu li a:hover #idForm {
         background: #333;
         color: #fff;
         box-shadow: 0 3px 10px 0 #CCC;
@@ -10399,8 +10398,7 @@
     
     .menu li ul {
         position: absolute;
-        top: 25px;
-        left: 0;
+        left: -45px;
         display: none;
     }
     
@@ -10410,7 +10408,18 @@
     }
     
     .menu li ul li {
-        border: 1px solid #c0c0c0;
+        /*border: 1px solid #c0c0c0;*/
+        border-radius: 12px;
+        background: #333;
         display: block;
         width: 150px;
+        margin: 5px 0 1px 0;
     }
+    
+    .matricula {
+        color: white;
+        margin: 0 0 0 50px;
+    }
+    /*.page-aluno {
+        display: none;
+    }*/
