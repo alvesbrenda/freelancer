@@ -10420,6 +10420,13 @@
         color: white;
         margin: 0 0 0 50px;
     }
+    
+    .abreForm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0 0 0;
+    }
     /*.page-aluno {
         display: none;
     }*/
