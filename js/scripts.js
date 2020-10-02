@@ -81,8 +81,6 @@ function fechaPopUp() {
 document.getElementById('mensagemEnviada').onclick = function() {
     swal('Obrigada!', 'Formulário enviado com sucesso!', 'success')
 };
-
-
 $("#success").click(function() {
     $("div.success").fadeIn(300).delay(1500).fadeOut(400);
 });
@@ -94,6 +92,7 @@ $("#success2").click(function() {
         showConfirmButton: false
     });
 });
+
 //limpa campos popup
 function limpaCampos() {
     document.getElementById('nome').value = "";
@@ -107,7 +106,6 @@ function limpaCampos() {
 
 //voltar ao topo
 var btn = $('#backToTop');
-
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
         btn.addClass('show');

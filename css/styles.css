@@ -10183,15 +10183,14 @@
         border-radius: .5rem;
         overflow: hidden
     }
-    
-    .portfolio .portfolio-item .portfolio-item-caption {
+    /*.portfolio .portfolio-item .portfolio-item-caption {
         position: absolute;
         top: 0;
         left: 0;
         transition: all .2s ease-in-out;
         opacity: 0;
         background-color: rgba(26, 188, 156, .9)
-    }
+    }*/
     
     .portfolio .portfolio-item .portfolio-item-caption:hover {
         opacity: 1
