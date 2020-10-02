@@ -10299,10 +10299,10 @@
     .pre {
         white-space: pre
     }
-    
+    /*
     .pre-wrap {
         white-space: pre-wrap
-    }
+    }*/
     
     .icon-contact {
         display: flex;
