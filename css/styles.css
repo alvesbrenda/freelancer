@@ -10426,6 +10426,11 @@
         align-items: center;
         margin: 15px 0 0 0;
     }
+    
+    .home {
+        width: 45rem!important;
+        margin-top: -17px;
+    }
     /*.page-aluno {
         display: none;
     }*/
